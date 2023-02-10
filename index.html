@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Practice</title>
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex overflow-hidden">
+       <input type="checkbox" name="" id="check" class="checkbox">
+        <aside class="sidebar d-flex column-flex">
+            <div class="first-links flex-grow">
+                <img class="ms-34 mt-22" src="./assets/images/logo.png" alt="">
+                <nav class="navclass">
+                    <ul class="link">
+                        <li class="link-item mt-44"><img class="ms-43" src="./assets/images/Rectangle 2804.png" alt=""><a
+                                class="linka ms-19" href="../index.html"> Dashboard</a></li>
+                        <li class="link-item mt-44"><img class="ms-43" src="./assets/images/Vector.png" alt=""> <a class="linka ms-19"
+                                href="">Inventory</a></li>
+                        <li class="link-item mt-44"><img class="ms-43" src="./assets/images/reports.png" alt=""><a class="linka ms-19"
+                                href=""> Reports</a></li>
+                        <li class="link-item mt-44"><img  class="ms-43" src="./assets/images/suppliers.png" alt=""><a
+                                class="linka ms-19" href=""> Suppliers</a></li>
+                        <li class="link-item mt-44"><img class="ms-43" src="./assets/images/orders.png" alt=""><a class="linka ms-19"
+                                href=""> Orders</a></li>
+                        <li class="link-item mt-44"><img class="ms-43" src="./assets/images/manage-store.png" alt=""><a
+                                class="linka ms-19" href=""> Manage Store</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="second-links">
+                <nav class="navclass">
+                    <ul class="link">
+                        <li class="link-item mt-44"><img class="ms-43" src="./assets/images/settings.png" alt=""> <a
+                                class="linka ms-19" href="">Settings</a></li>
+                        <li class="link-item mt-44"><img class="ms-43" src="./assets/images/logout.png" alt=""><a class="linka ms-19"
+                                href=""> Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <div class="main-wrapper d-flex column-flex flex-grow">
+            <header class="header-class d-flex justify-space-between">
+                <div>
+                    <button class="button btn-primary">
+                        <label for="check"><img src="./assets/images/hambuger menu.png" alt=""></label>
+                    </button>
+                    <input type="text" class="input-with-search" name="" id=""
+                        placeholder="Search Product,supplier,order">
+                </div>
+                <div>
+                <button class="button">
+                    <img class="btn-icon notification-img" src="./assets/images/bell.png" alt="">
+                    
+                </button>
+                <button class="button">
+                    <img class="btn-icon" src="./assets/images/avatar.png" alt="">
+                </button>
+            </div>
+            </header>
+            <main class="main-content d-flex column-flex overflow-hidden">
+                <section class="card">
+                    <h4>Overall Inventory</h4>
+                    <div class="card-details d-flex justify-space-between mt-22">
+                        <div class="category d-flex column-flex">
+                            <h5 class="caption">Categories</h5>
+                            <span class="caption1">14</span>
+                            <span class="caption2 mt-12">Last 7 days</span>
+                        </div>
+                      
+                        <div class="total-products d-flex column-flex">
+                            <h5 class="caption">Total Products</h5>
+                         
+                            <div class="mt-12 d-flex justify-space-between">
+                                <span class="caption1">14</span>
+                                <span class="caption1">25000</span>
+                            </div>
+                            <div class="mt-12 d-flex justify-space-between">
+                                <span class="caption2">Last 7 days</span>
+                                <span class="caption2 ms-34">Revenue</span>
+                            </div>
+                        
+                        </div>
+                        <div class="top-selling d-flex column-flex">
+                            <h5 class="caption">Total Products</h5>
+                         
+                            <div class="mt-12 d-flex justify-space-between">
+                                <span class="caption1">14</span>
+                                <span class="caption1">25000</span>
+                            </div>
+                            <div class="mt-12 d-flex justify-space-between">
+                                <span class="caption2">Last 7 days</span>
+                                <span class="caption2 ms-34">Revenue</span>
+                            </div>
+                        
+                        </div>
+                        <div class="low-selling d-flex column-flex">
+                            <h5 class="caption">Total Products</h5>
+                         
+                            <div class="mt-12 d-flex justify-space-between">
+                                <span class="caption1">14</span>
+                                <span class="caption1">25000</span>
+                            </div>
+                            <div class="mt-12 d-flex justify-space-between">
+                                <span class="caption2">Last 7 days</span>
+                                <span class="caption2 ms-34">Revenue</span>
+                            </div>
+                        
+                        </div>
+                       
+                    </div>
+                </section>
+                <section class="table-products d-flex column-flex overflow-hidden">
+                    <div class="table-header d-flex justify-space-between">
+                        <h2 class="table-heading">Products</h2>
+                        <div>
+                            <button class="btn-add-product">Add Product</button>
+                            <button class="btn-filter"><img src="./assets/images/filter.png" alt="" class="img-filter me-10">Filters</button>
+                            <button class="btn-download-all">Download All</button>
+                        </div>
+                    </div>
+                    <div class="table-section">
+                    <table class="table mt-22">
+                        <thead>
+                            <th>Products</th>
+                            <th>Buying Price</th>
+                            <th>Quantity</th>
+                            <th>Threshold Value</th>
+                            <th>Expiry Date</th>
+                            <th>Availability</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                        <tr>
+                            <td>Maggi</td>
+                            <td>430</td>
+                            <td>43 Packets</td>
+                            <td>12 Packets</td>
+                            <td>11/12/22</td>
+                            <td>Out-of-stock</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                    <div class="page-footer d-flex justify-space-between mt-22">
+                        <button class="btn-previous">Previous</button>
+                        <span class="footer-caption">Page 1 of 10</span>
+                        <button class="btn-next">Next</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
